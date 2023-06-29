@@ -1,0 +1,11 @@
+.infoTitle {
+    border-bottom: 2px solid black;
+    margin: 10px;
+}
+
+h3 {
+    margin: 2px;
+    font-size: .8rem;
+    letter-spacing: 4px;
+}
+

@@ -1,0 +1,63 @@
+.titleContainer {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleBox, .formBox{
+    border: 2px solid black;
+    background-color: #f1f1f1;
+    width: 400px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.nameTitle {
+    margin: 5px;
+    letter-spacing: .05rem;
+    font-weight: 500;
+    
+    
+
+}
+.positionTitle {
+    margin: 5px;
+}
+
+#editButt {
+    position: absolute;
+    top: 6%;
+    right: 40%;
+    visibility: hidden;
+   
+}
+
+.titleBox:hover > #editButt {
+    visibility: visible;
+   
+}
+
+.formBox > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#nameTitleInput {
+     
+    line-height: 2.0rem;
+    width: 200px;
+   
+}
+
+.formBox {
+   position: absolute;
+}
