@@ -1,0 +1,20 @@
+#profileText {
+    padding: 5px;
+    position: relative;
+}
+
+#editProfile {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    visibility: hidden;
+}
+
+#profileText:hover > button {
+    visibility: visible;
+}
+
+#textArea {
+    width: 90%;
+    height: 100px;
+}

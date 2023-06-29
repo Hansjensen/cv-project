@@ -37,6 +37,7 @@ class App extends Component {
                  <div id="main">
                   <div id="profile">
                   <InfoTitle title="Profile" />
+                  <Profile />
                   </div>
                   <div id="school">
                   <InfoTitle title="Education" />
