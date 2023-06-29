@@ -1,0 +1,67 @@
+
+
+.skillsList {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    margin:0;
+    width: 100%;
+}
+
+.skillsList  #editButt {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    visibility: hidden;
+}
+
+.skillsList:hover  #addDiv{
+    visibility: visible;
+}
+
+#addDiv {
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+}
+
+.skillsList:hover  #addDiv{
+    visibility: visible;
+}
+#addInput {
+    width: 100px;
+    margin: 0 10px 0 10px;
+}
+
+ #addDiv:has(input:focus) {
+    visibility: visible;
+}
+
+
+.list {
+    padding: 15px;
+    margin: 2px;
+}
+
+.skillsDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 0;
+    width: 120px;
+    font-weight: 700;
+}
+
+.skillsDiv > button {
+    visibility: hidden;
+   font-size: .4rem;
+   padding: 0;
+}
+.skillsDiv:hover > button {
+    visibility: visible;
+   font-size: .4rem;
+   padding: 0;
+}

@@ -1,0 +1,38 @@
+.details {
+   
+    padding: 10px;
+    display: "flex";
+    justify-content: flex-start;
+    position: relative;
+}
+
+h6{
+    margin: 4px;
+}
+
+p {
+    margin: 2px;
+    font-size: .7rem;
+}
+
+.editButt {
+    position: absolute;
+    top:0px;
+    right:0px;
+    visibility: hidden;
+}
+
+.details:hover > .editButt {
+    visibility: visible;
+}
+
+.infoBox{
+    position: relative;
+}
+
+.editInput {
+    position: relative;
+    top:0;
+    line-height: .8rem;
+    font-size: .8rem;
+}

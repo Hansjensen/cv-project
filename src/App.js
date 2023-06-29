@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './App.css';
 import Title from './components/Title'
 import InfoTitle from "./components/InfoTitle";
+import Details from "./components/Details";
+import Skills from "./components/Skills";
+import Profile from "./components/Profile";
 
 
 class App extends Component {
@@ -24,9 +27,11 @@ class App extends Component {
                 <div id="sidebar">
                   <div id="personalInfo">
                   <InfoTitle title="Details" />
+                    <Details/>
                   </div>
                   <div id="skills">
                   <InfoTitle title="Skills" />
+                   <Skills />
                   </div>
                 </div>
                  <div id="main">
