@@ -6,7 +6,7 @@ class Title extends Component {
         super(props)
 
         this.state = {
-            userName: "Hans Jensen",
+            userName: "Odin Borson",
             userTitle: "Software Engineer",
             edit: false
           };

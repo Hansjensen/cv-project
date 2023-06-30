@@ -1,0 +1,98 @@
+
+.workDiv {
+    display:flex;
+    flex-direction: column;
+}
+
+.workDiv > ul {
+    padding: 0;
+}
+
+.workEntry {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.workTitleLoc {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+
+.company {
+    font-weight: 800;
+}
+
+
+.workPosDate {
+    display:flex;
+    margin: 0;
+    padding: 0;
+}
+
+.position {
+    font-style: italic;
+}
+
+.workDesc {
+ font-size: .7rem ;
+ padding: 0px 10px 0px 0px;
+}
+
+.removeWork {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    visibility: hidden;
+}
+
+.workEntry:hover > button {
+    visibility: visible;
+}
+
+.popUpAdd {
+    position: absolute;
+    height: 40%;
+    width: 40%;
+    background-color: rgba(159, 159, 159, 0.932);
+    top:20%;
+    left:30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px black;
+ 
+    transition: opacity 0.5s ease-in;
+}
+
+#popForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    background-color: rgb(238, 238, 238);
+}
+
+#popForm > label {
+    letter-spacing: .1rem;
+    font-size: .8rem;
+    margin-top: 5pxpx;
+    width: 90%;
+}
+
+#popForm > input {
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+#addWorkButt {
+    margin: auto;
+    visibility: hidden;
+}
+
+.workDiv:hover > #addWorkButt {
+    visibility: visible;
+}

@@ -6,6 +6,7 @@ import InfoTitle from "./components/InfoTitle";
 import Details from "./components/Details";
 import Skills from "./components/Skills";
 import Profile from "./components/Profile";
+import Work from "./components/Work";
 
 
 class App extends Component {
@@ -41,6 +42,7 @@ class App extends Component {
                   </div>
                   <div id="work">
                   <InfoTitle title="Work History" />
+                  <Work/>
                   </div>
                   <div id="school">
                   <InfoTitle title="Education" />
