@@ -39,11 +39,11 @@ class App extends Component {
                   <InfoTitle title="Profile" />
                   <Profile />
                   </div>
-                  <div id="school">
-                  <InfoTitle title="Education" />
-                  </div>
                   <div id="work">
                   <InfoTitle title="Work History" />
+                  </div>
+                  <div id="school">
+                  <InfoTitle title="Education" />
                   </div>
 
                 </div>
