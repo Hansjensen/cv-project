@@ -7,7 +7,7 @@ class Work extends Component {
         super()
 
         this.state = {
-            experience: {
+            
                 company: "",
                 location:"",
                 startDate: "",
@@ -16,8 +16,8 @@ class Work extends Component {
                 job1:"",
                 job2:"",
                 job3:"",
-                id: uniqid()
-            },
+                id: uniqid(),
+            
             experiences: [{
                 company: "Mcdonalds Inc",
                 location:"Dallas, TX",
@@ -56,15 +56,15 @@ class Work extends Component {
         this.setState(prevState => ({
             add: !prevState.add
             }))
-            console.log(this.state.add)
+          
 
     }
 
     handleCompanyChange = (e) => {
         this.setState({
-            experience:{
+            
             company: e.target.value
-            }
+            
         }
         )
         
@@ -73,19 +73,20 @@ class Work extends Component {
     
     handleLocationChange = (e) => {
         this.setState({
-            experience:{
+            
             location: e.target.value
-            }
+            
         }
         )
+        
         
     }
 
     handleStartDateChange = (e) => {
         this.setState({
-            experience:{
+            
             startDate: e.target.value
-            }
+            
         }
         )
         
@@ -93,9 +94,9 @@ class Work extends Component {
     
     handleEndDateChange = (e) => {
         this.setState({
-            experience:{
+           
             endDate: e.target.value
-            }
+            
         }
         )
         
@@ -103,9 +104,9 @@ class Work extends Component {
 
     handlePositionChange = (e) => {
         this.setState({
-            experience:{
+            
             position: e.target.value
-            }
+            
         }
         )
         
@@ -114,42 +115,54 @@ class Work extends Component {
 
     handleJob1Change = (e) => {
         this.setState({
-            experience:{
+         
             job1: e.target.value
-            }
+            
         }
         )
-        console.log(this.state.experience.job1)
+       
         
     }
 
     handleJob2Change = (e) => {
         this.setState({
-            experience:{
+           
             job2: e.target.value
-            }
+            
         }
         )
-        console.log(this.state.experience.job2)
         
     }
 
     handleJob3Change = (e) => {
         this.setState({
-            experience:{
+           
             job3: e.target.value
-            }
+            
         }
         )
-        console.log(this.state.experience.job3)
+        console.log(this.state)
+       
         
     }
 
     handleAddWorkSubmit = (e) => {
         e.preventDefault()
+        console.log(this.state.experiences)
         this.setState({
-            experiences: this.state.experiences.concat(this.state.experience),
-            experience: {
+            experiences: this.state.experiences.concat({
+                company: this.state.company,
+                location:this.state.location,
+                startDate: this.state.startDate,
+                endDate: this.state.endDate,
+                position: this.state.position,
+                job1:this.state.job1,
+                job2:this.state.job2,
+                job3:this.state.job3,
+                id: this.state.id
+            })
+        ,
+            
                 company: "",
                 location:"",
                 startDate: "",
@@ -159,12 +172,13 @@ class Work extends Component {
                 job2:"",
                 job3:"",
                 id: uniqid()
-            }
+        
         })
         console.log(this.state.experiences)
         this.setState(prevState => ({
             add: !prevState.add
             }))
+      
         
     }
 
@@ -245,6 +259,10 @@ class PopUpAdd extends Component {
         super(props)
     }
 
+    preventDefault(e) {
+        e.preventDefault()
+    }
+
     render () {
 
         
@@ -253,7 +271,7 @@ class PopUpAdd extends Component {
             
          
             <div className="popUpAdd">
-                <form id="popForm">
+                <form id="popForm" >
                     <label htmlFor="companyInput">Company</label>
                     <input type="text" id="companyInput" onChange={this.props.company}></input>
                     <label htmlFor="locationInput">Location</label>
@@ -270,7 +288,7 @@ class PopUpAdd extends Component {
                     <input type="text" id="job2" onChange={this.props.job2}></input>
                     <label htmlFor="job3">Job Duty</label>
                     <input type="text" id="job3" onChange={this.props.job3}></input>
-                    <button onClick={this.handleAddWorkSubmit}>Add Work</button>
+                    <button onClick={this.props.addWork}>Add Work</button>
                         
                     
                 </form>
