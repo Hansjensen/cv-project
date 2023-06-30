@@ -1,0 +1,45 @@
+#edu {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.eduEntry {
+    position: relative;
+}
+
+.degreeSchool {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    
+}
+
+.degreeSchool > h5 {
+    margin: 1px 0px;
+}
+
+.eduRemove {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    font-size: .6rem;
+    padding: 2px;
+    visibility: hidden;
+}
+
+.eduEntry:hover > button {
+    visibility: visible;
+}
+
+#addEduButt {
+    visibility: hidden;
+    width: 50%;
+    margin-left: 20%;
+   
+}
+
+#edu:hover > #addEduButt {
+    visibility: visible;
+}

@@ -29,6 +29,17 @@ class Work extends Component {
                 job3:"Ensure fries are salted and crispy because nobody likes soggy fries.",
                 id:32
 
+            }, {
+                company: "Burger King",
+                location:"Dallas, TX",
+                startDate: "Dec 2015",
+                endDate: "Mar 2019",
+                position:"Customer Service Agent",
+                job1:"Flip burgers until burgers are cooked then make burger for customer",
+                job2:"Try to fix ice cream machine. Never successfully",
+                job3:"Ensure fries are salted and crispy because nobody likes soggy fries.",
+                id:33
+
             }],
             add: false
         }
@@ -141,14 +152,13 @@ class Work extends Component {
             
         }
         )
-        console.log(this.state)
        
         
     }
 
     handleAddWorkSubmit = (e) => {
         e.preventDefault()
-        console.log(this.state.experiences)
+        
         this.setState({
             experiences: this.state.experiences.concat({
                 company: this.state.company,
@@ -174,7 +184,7 @@ class Work extends Component {
                 id: uniqid()
         
         })
-        console.log(this.state.experiences)
+        
         this.setState(prevState => ({
             add: !prevState.add
             }))
@@ -188,8 +198,7 @@ class Work extends Component {
     render() {
         const {add} = this.state
         return (
-        <div className="workDiv">
-            <WorkList handleRemove={this.handleRemove} experiences={this.state.experiences}/>
+            <>
             {add && 
                 <PopUpAdd 
                     company={this.handleCompanyChange}
@@ -202,8 +211,14 @@ class Work extends Component {
                     job3={this.handleJob3Change}
                     addWork={this.handleAddWorkSubmit}
                     />}
+        <div className="workDiv">
+            <WorkList handleRemove={this.handleRemove} experiences={this.state.experiences}/>
+            
+            
             <button id="addWorkButt" onClick={this.handleAddPop}>Add Work</button>
+            
         </div>
+        </>
         
         )
     }
@@ -219,7 +234,7 @@ class WorkList extends Component {
     render() {
         const {experiences} = this.props
         return (
-           <ul>
+           <ul id="experienceList">
             {experiences.map((experience) => {
             return (
                
