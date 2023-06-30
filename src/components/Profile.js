@@ -10,6 +10,7 @@ class Profile extends Component {
             edit: false
         }
         this.handleEdit = this.handleEdit.bind(this)
+        this.handleChange = this.handleChange.bind(this)
     }
 
     handleEdit () {
@@ -18,6 +19,13 @@ class Profile extends Component {
             edit: !prevState.edit
         }))
 
+    }
+
+    handleChange (e) {
+        this.setState({
+            profile: e.target.value
+        }
+        )
     }
 
     render () {
@@ -29,7 +37,7 @@ class Profile extends Component {
                     }
                 <button id="editProfile" onClick={this.handleEdit}>Edit</button>
                 {edit && 
-                    <textarea value={profile} id="textArea"></textarea>
+                    <textarea value={profile} id="textArea" onChange={this.handleChange}></textarea>
                     }
             </div>
         )
