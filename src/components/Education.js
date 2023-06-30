@@ -14,7 +14,8 @@ class Education extends Component {
             remark2: "",
             id: uniqid(),
             add: false,
-            list: [{degree:"Masters Computational Science and Engineering", school: "Harvard", remark1: "Super good grades", remark2: "Barely did any drugs to get the good grades.", id:2}]
+            list: [{degree:"Masters Computational Science and Engineering", school: "Harvard", remark1: "Super good grades", remark2: "Barely did any drugs to get the good grades.", id:2},
+            {degree:"BS in Biochemistry", school: "University of Pheonix", remark1: "Even better Grades", remark2: "The harvard of online schools", id:10}]
         }
         this.handleRemove = this.handleRemove.bind(this)
         this.handleDegreeChange = this.handleDegreeChange.bind(this)
