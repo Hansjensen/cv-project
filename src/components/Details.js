@@ -1,6 +1,15 @@
 import '../styles/details.css'
-import React, {Component} from "react";
+import React, {Component, useState} from "react";
 
+function Detailstwo () {
+    const [address, setAddress] = useState("123 Fake St");
+    const [address2, setAddress2] = useState ("Noncity, CA 12345")
+    const [phone, setPhone] = useState("1-800-321-4321");
+    const [email, setEmail] = useState("notanemail@gmail.com")
+    const [edit, setEdit] = useState(false)
+
+    
+}
 
 class Details extends Component {
     constructor(props) {
