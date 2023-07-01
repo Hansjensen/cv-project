@@ -39,8 +39,8 @@ function Details () {
 
                 {edit && 
                     <form>
-                        <input defaultValue={address} onChange={this.handleAdressChange} className="editInput"></input>
-                        <input defaultValue={address2} onChange= {this.handleAdress2Change} className="editInput"></input>
+                        <input defaultValue={address} onChange={handleAddressChange} className="editInput"></input>
+                        <input defaultValue={address2} onChange= {handleAddress2Change} className="editInput"></input>
                     </form>}
                 </div>
             <DetailTitle title="Phone" />
@@ -49,20 +49,20 @@ function Details () {
                 <p>{phone}</p>}
                 {edit &&
 
-                    <input defaultValue={phone} onChange={this.handlePhoneChange} className="editInput"></input>}
+                    <input defaultValue={phone} onChange={handlePhoneChange} className="editInput"></input>}
                 
             <DetailTitle title="Email" />
                 {!edit &&
                 <p>{email}</p>}
                 {edit &&
-                <input defaultValue={email} onChange={this.handleEmailChange} className="editInput"></input>}
-            <button className="editButt" onClick={this.handleEdit}>Edit</button>
+                <input defaultValue={email} onChange={handleEmailChange} className="editInput"></input>}
+            <button className="editButt" onClick={handleToggle}>Edit</button>
         </div>
         )
 }
 
-function DetailTitle() {
-    return <h6 className="detailTitle">{this.props.title}</h6>
+function DetailTitle(props) {
+    return <h6 className="detailTitle">{props.title}</h6>
 }
 
 
