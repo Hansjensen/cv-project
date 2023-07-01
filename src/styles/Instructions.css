@@ -3,10 +3,9 @@
   width: 420px;
   height: 600px;
   box-shadow: 0px 2px 10px rgb(85, 85, 85);
-  background-color: darkgray;
+  background-color: rgb(217, 217, 217);
   margin-right: 40px;
   display: flex;
   flex-direction: column;
-  
   padding: 100px;
 }

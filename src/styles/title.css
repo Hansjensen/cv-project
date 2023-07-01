@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 .titleBox, .formBox{
@@ -15,7 +16,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    position: relative
     
 }
 
@@ -34,8 +35,8 @@
 
 #editButt {
     position: absolute;
-    top: 6%;
-    right: 40%;
+    top: 4px;
+    right: 4px;
     visibility: hidden;
    
 }
