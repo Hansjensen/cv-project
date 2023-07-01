@@ -1,20 +1,14 @@
-import React, {Component} from "react";
+import React from "react";
 import '../styles/infoTitle.css'
 
-
-class InfoTitle extends Component {
-    constructor(props) {
-        super(props);
-    }
-
-
-    render() {
-        return (
+function InfoTitle (props) {
+    return (
         <div className="infoTitle">
-            <h3>{this.props.title}</h3>
+            <h3>{props.title}</h3>
         </div>
         )
-    }
 }
+
+
 
 export default InfoTitle;
