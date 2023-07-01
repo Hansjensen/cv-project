@@ -8,6 +8,7 @@ import Skills from "./components/Skills";
 import Profile from "./components/Profile";
 import Work from "./components/Work";
 import Education from "./components/Education";
+import Instructions from "./components/Instructions";
 
 
 class App extends Component {
@@ -23,6 +24,8 @@ class App extends Component {
   render() {
      
     return (
+      <div id="page">
+      <Instructions/>
       <div className="wrapper" id ="wrapper">
         <Title />
         <div id="infoContainer">
@@ -52,6 +55,7 @@ class App extends Component {
 
                 </div>
         </div>
+      </div>
       </div>
     )
 

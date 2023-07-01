@@ -7,8 +7,13 @@ body {
 
 }
 
+#page {
+  display: flex;
+  justify-content: center;
+}
+
 .wrapper{ 
-  margin: auto;
+  
   margin-top: 1%;
   width: 620px;
   height: 800px;
