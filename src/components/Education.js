@@ -2,6 +2,8 @@ import React, {Component} from "react";
 import "../styles/Education.css"
 import uniqid from "uniqid"
 
+
+
 class Education extends Component {
 
     constructor () {
